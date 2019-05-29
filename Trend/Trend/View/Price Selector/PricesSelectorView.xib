@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PricesSelectorView" customModule="Trend" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ITH-oh-0NK" customClass="PricesSelectorView" customModule="Trend" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUe-Of-Q9c">
+                    <rect key="frame" x="0.0" y="0.0" width="157" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цена от, руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-Uz-8bD">
+                            <rect key="frame" x="18" y="14.666666666666664" width="101" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="HRx-uE-bAh">
+                            <rect key="frame" x="123" y="17" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="JiS-W7-rXy"/>
+                                <constraint firstAttribute="width" secondItem="HRx-uE-bAh" secondAttribute="height" multiplier="1:1" id="wtl-V0-Eea"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfG-Kz-Yv9">
+                            <rect key="frame" x="0.0" y="0.0" width="157" height="50"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PfG-Kz-Yv9" secondAttribute="trailing" id="0Ko-Bl-7mw"/>
+                        <constraint firstAttribute="trailing" secondItem="HRx-uE-bAh" secondAttribute="trailing" constant="18" id="5Nl-A4-7zn"/>
+                        <constraint firstItem="HRx-uE-bAh" firstAttribute="leading" secondItem="O3X-Uz-8bD" secondAttribute="trailing" constant="4" id="DvW-EE-bY4"/>
+                        <constraint firstItem="O3X-Uz-8bD" firstAttribute="leading" secondItem="pUe-Of-Q9c" secondAttribute="leading" constant="18" id="RRR-E9-m2y"/>
+                        <constraint firstItem="O3X-Uz-8bD" firstAttribute="centerY" secondItem="pUe-Of-Q9c" secondAttribute="centerY" id="VHy-Vs-LZm"/>
+                        <constraint firstAttribute="trailing" secondItem="HRx-uE-bAh" secondAttribute="trailing" constant="18" id="ZpD-83-yJA"/>
+                        <constraint firstItem="PfG-Kz-Yv9" firstAttribute="leading" secondItem="pUe-Of-Q9c" secondAttribute="leading" id="aN7-Fj-ne1"/>
+                        <constraint firstAttribute="bottom" secondItem="PfG-Kz-Yv9" secondAttribute="bottom" id="dA9-KC-oG7"/>
+                        <constraint firstItem="HRx-uE-bAh" firstAttribute="centerY" secondItem="O3X-Uz-8bD" secondAttribute="centerY" id="etK-4V-uV5"/>
+                        <constraint firstItem="PfG-Kz-Yv9" firstAttribute="top" secondItem="pUe-Of-Q9c" secondAttribute="top" id="gmH-Y1-6Qc"/>
+                        <constraint firstAttribute="height" constant="50" id="ybJ-MT-Ix0"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R04-wb-62t">
+                    <rect key="frame" x="0.0" y="50" width="157" height="250"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="fc3-Tu-I79"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="ITH-oh-0NK" id="Fdc-7w-cd9"/>
+                        <outlet property="delegate" destination="ITH-oh-0NK" id="Saa-Ks-Ni7"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pUe-Of-Q9c" firstAttribute="trailing" secondItem="Oyn-ae-eJh" secondAttribute="trailing" id="J9V-B7-TB5"/>
+                <constraint firstItem="pUe-Of-Q9c" firstAttribute="top" secondItem="Oyn-ae-eJh" secondAttribute="top" id="SZ7-PO-FaY"/>
+                <constraint firstItem="R04-wb-62t" firstAttribute="trailing" secondItem="Oyn-ae-eJh" secondAttribute="trailing" id="Stz-bf-DIW"/>
+                <constraint firstItem="R04-wb-62t" firstAttribute="leading" secondItem="Oyn-ae-eJh" secondAttribute="leading" id="jjz-Qf-HO0"/>
+                <constraint firstItem="pUe-Of-Q9c" firstAttribute="leading" secondItem="Oyn-ae-eJh" secondAttribute="leading" id="mUR-9l-yaE"/>
+                <constraint firstItem="R04-wb-62t" firstAttribute="top" secondItem="pUe-Of-Q9c" secondAttribute="bottom" id="yyS-p9-qCh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Oyn-ae-eJh"/>
+            <connections>
+                <outlet property="arrowImageView" destination="HRx-uE-bAh" id="mzZ-uJ-U4C"/>
+                <outlet property="button" destination="PfG-Kz-Yv9" id="rYo-Ar-pFz"/>
+                <outlet property="tableView" destination="R04-wb-62t" id="FDc-ew-UkK"/>
+                <outlet property="titleLabel" destination="O3X-Uz-8bD" id="bF7-nt-gqD"/>
+            </connections>
+            <point key="canvasLocation" x="-283.33333333333337" y="22.010869565217394"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="40" height="40"/>
+    </resources>
+</document>
